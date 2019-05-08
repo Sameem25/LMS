@@ -24,7 +24,7 @@ $sql_query = "Select COUNT(CopyId) AS copynum From book AS B, bookcopy AS BC Whe
 	$row = mysqli_fetch_array($result);
 	$copynum = $row['copynum'];
 	if($copynum == 0) {
-		$today = "2015-4-10";
+		$today = date("Y-m-d");
 		$sql_query = "Select Min(ReturnDate) AS availdate From book AS B, bookcopy AS BC, issue AS I Where B.ISBN = '$isbn' AND B.ISBN = BC.ISBN AND BC.ISBN = I.ISBN AND IsReserved = 0 AND IsDamaged = 0 AND BC.CopyID = I.CopyID AND (IsHold = 1 OR IsChecked = 1) AND ReturnDate > '$today'";
 		//Run our sql query
 		$result = mysqli_query ($link, $sql_query)  or die(mysqli_error($link));  

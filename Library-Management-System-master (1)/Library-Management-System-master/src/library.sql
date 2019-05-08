@@ -233,6 +233,7 @@ CREATE TABLE IF NOT EXISTS `issue` (
 -- Dumping data for table `issue`
 --
 
+/*
 INSERT INTO `issue` (`Username`, `ISBN`, `CopyID`, `IssueID`, `ExtenDate`, `IssueDate`, `ReturnDate`, `NumExten`) VALUES
 ('aclark', '0124077269', 1, 115, '2015-04-13', '2015-03-31', '2015-04-27', 1),
 ('ahart', '0123704901', 1, 45, '2015-01-03', '2015-01-03', '2015-01-17', 0),
@@ -274,6 +275,7 @@ INSERT INTO `issue` (`Username`, `ISBN`, `CopyID`, `IssueID`, `ExtenDate`, `Issu
 ('thwang', '0205973361', 2, 90, '2015-03-10', '2015-03-10', '2013-03-24', 0),
 ('thwang', '0470879521', 4, 78, '2015-02-03', '2015-02-03', '2015-02-17', 0),
 ('ywu', '0123944244', 1, 118, '2015-04-12', '2015-04-12', '2015-04-26', 0);
+*/
 
 -- --------------------------------------------------------
 
