@@ -36,7 +36,7 @@ mysqli_select_db($link, $database) or die( "Unable to select database");
 			//the username and password matches the database 
 			//move them to the page to which they need to go 
 				header('Location: AdminSummary.php');	
-				break;
+			//	break;
 			//Our SQL Query
 			}
 			
@@ -73,7 +73,7 @@ mysqli_select_db($link, $database) or die( "Unable to select database");
 </tr>
 <tr>
     <td>Password</td>
-    <td><input type="text" name="password" required/></td>
+    <td><input type="password" name="password" required/></td>
 </tr>
 </table>
 
